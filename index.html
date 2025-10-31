@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍣 Restaurante Japonês 🇯🇵</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🍣 Restaurante Japonês 🇯🇵</h1>
+        <nav>
+            <a href="#entradas">Entradas</a>
+            <a href="#sushi">Sushi & Sashimi</a>
+            <a href="#hot">Hot Rolls</a>
+            <a href="#sobremesas">Sobremesas</a>
+            <a href="#bebidas">Bebidas</a>
+        </nav>
+    </header>
+
+    <!-- Container principal -->
+    <div class="container">
+
+        <!-- Entradas -->
+        <section id="entradas">
+            <h2>🥟 Entradas</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <h3>Guioza</h3>
+                    <p>Pastelzinho japonês frito - 6 unidades</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 22,90</span>
+                        <button class="btn-add" onclick="add('Guioza', 22.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Harumaki</h3>
+                    <p>Rolinho primavera - 4 unidades</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 18,90</span>
+                        <button class="btn-add" onclick="add('Harumaki', 18.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Missoshiru</h3>
+                    <p>Sopa de missô tradicional</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 12,90</span>
+                        <button class="btn-add" onclick="add('Missoshiru', 12.90)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sushi & Sashimi -->
+        <section id="sushi">
+            <h2>🍱 Sushi & Sashimi</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <h3>Combinado de Sushi</h3>
+                    <p>10 peças variadas</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 45,90</span>
+                        <button class="btn-add" onclick="add('Combinado de Sushi', 45.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Sashimi de Salmão</h3>
+                    <p>8 fatias de salmão fresco</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 52,90</span>
+                        <button class="btn-add" onclick="add('Sashimi de Salmão', 52.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Temaki de Salmão</h3>
+                    <p>Cone de alga com salmão</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 24,90</span>
+                        <button class="btn-add" onclick="add('Temaki de Salmão', 24.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Hossomaki</h3>
+                    <p>8 peças de rolinho fino</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 28,90</span>
+                        <button class="btn-add" onclick="add('Hossomaki', 28.90)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hot Rolls -->
+        <section id="hot">
+            <h2>🔥 Hot Rolls</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <h3>Hot Philadelphia</h3>
+                    <p>Salmão e cream cheese empanado</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 38,90</span>
+                        <button class="btn-add" onclick="add('Hot Philadelphia', 38.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Hot Califórnia</h3>
+                    <p>Kani, pepino e abacate empanado</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 35,90</span>
+                        <button class="btn-add" onclick="add('Hot Califórnia', 35.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Hot Skin</h3>
+                    <p>Salmão grelhado empanado</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 42,90</span>
+                        <button class="btn-add" onclick="add('Hot Skin', 42.90)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobremesas -->
+        <section id="sobremesas">
+            <h2>🍡 Sobremesas</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <h3>Mochi</h3>
+                    <p>Bolinho de arroz recheado - 3 unidades</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 18,90</span>
+                        <button class="btn-add" onclick="add('Mochi', 18.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Daifuku</h3>
+                    <p>Mochi recheado com pasta de feijão</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 16,90</span>
+                        <button class="btn-add" onclick="add('Daifuku', 16.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Sorvete de Chá Verde</h3>
+                    <p>Sorvete artesanal de matcha</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 22,90</span>
+                        <button class="btn-add" onclick="add('Sorvete de Chá Verde', 22.90)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bebidas -->
+        <section id="bebidas">
+            <h2>🍵 Bebidas</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <h3>Chá Verde</h3>
+                    <p>Chá verde tradicional quente</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 8,90</span>
+                        <button class="btn-add" onclick="add('Chá Verde', 8.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Suco de Lichia</h3>
+                    <p>Suco natural de lichia 500ml</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 12,90</span>
+                        <button class="btn-add" onclick="add('Suco de Lichia', 12.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Refrigerante</h3>
+                    <p>Lata 350ml</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 7,90</span>
+                        <button class="btn-add" onclick="add('Refrigerante', 7.90)">Adicionar</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3>Sakê</h3>
+                    <p>Dose 50ml quente ou gelado</p>
+                    <div class="preco-box">
+                        <span class="preco">R$ 18,90</span>
+                        <button class="btn-add" onclick="add('Sakê', 18.90)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Botão flutuante do carrinho -->
+    <button class="carrinho-btn" onclick="abrir()">
+        🛒
+        <span class="contador" id="contador">0</span>
+    </button>
+
+    <!-- Carrinho lateral -->
+    <div class="carrinho-lateral" id="carrinho">
+        <div class="carrinho-header">
+            <h2>🛒 Meu Carrinho</h2>
+            <button class="btn-fechar" onclick="fechar()">×</button>
+        </div>
+        <div class="carrinho-itens" id="itens">
+            <div class="carrinho-vazio">
+                <p>Seu carrinho está vazio</p>
+            </div>
+        </div>
+        <div class="carrinho-total" id="total-box" style="display: none;">
+            <div class="total-valor">Total: R$ <span id="total">0,00</span></div>
+            <button class="btn-finalizar" onclick="finalizar()">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <!-- Ticket do pedido -->
+    <div class="ticket-backdrop" id="ticket-backdrop">
+        <div class="ticket">
+            <div class="ticket-header">
+                <h2>✅ Pedido Confirmado!</h2>
+                <p>Obrigado por escolher nosso restaurante</p>
+            </div>
+            <div class="ticket-corpo">
+                <div class="ticket-info">
+                    <p><strong>Pedido #<span id="numero-pedido"></span></strong></p>
+                    <p>Data e Hora: <span id="data-pedido"></span></p>
+                </div>
+                <div id="ticket-itens"></div>
+                <div class="ticket-total">
+                    <p>TOTAL</p>
+                    <p class="ticket-total-valor">R$ <span id="ticket-total"></span></p>
+                </div>
+                <button class="btn-ticket-fechar" onclick="fecharTicket()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <h3>🍣 Restaurante Japonês 🇯🇵</h3>
+        <p>📍 Rua dos Sushis, 123 - Centro</p>
+        <p>📞 (11) 98765-4321</p>
+        <p>⏰ Seg-Dom: 11h às 23h</p>
+        <p style="margin-top: 20px;">© 2025 Restaurante Japonês. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
